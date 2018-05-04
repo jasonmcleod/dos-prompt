@@ -28,4 +28,4 @@ var startup = [
 var slowPrint = setInterval(function() {
     newLine(startup.shift());
     if(startup.length === 0) clearInterval(slowPrint);
-}, 200);
+}, 100);

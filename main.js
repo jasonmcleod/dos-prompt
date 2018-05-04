@@ -19,11 +19,11 @@ var setCopy = function(value) {
 var setCopy = function(value) {
     promptCopy.innerHTML = systemPrompt + value;
     promptCopy.innerHTML+='<span id="cursor-' + cursorType + '"></span>';
-    // prompt.style.paddingLeft = systemPrompt.length + 'em';
 };
 
 var newLine = function(str) {
     terminal.innerHTML += '<br>' + str;
+    window.scrollTo(0,document.body.scrollHeight);
 };
 
 document.addEventListener('click', function() {setFocus() });
